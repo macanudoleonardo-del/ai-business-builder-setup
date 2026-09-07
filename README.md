@@ -1,19 +1,37 @@
-# AI Business Builder — setup
+# AI Business Builder — las guías del curso
 
-La guía que deja **tu computadora** lista para el curso: git, Python 3, Claude Code, y las
-cuatro cuentas (GitHub · Supabase · Vercel · Claude).
+Dos archivos, en orden. Cada uno se le entrega a Claude Code y él ejecuta.
+
+| # | Archivo | Qué hace | Estado |
+|---|---|---|---|
+| 1 | **`SETUP.md`** | Deja tu computadora lista: git · Python 3 · Claude Code · las 4 cuentas (GitHub · Supabase · Vercel · Claude) | ✅ hecho — 2026-09-07 |
+| 2 | **`CEREBRO.md`** | Le construye **memoria permanente** a tu IA en `~/cerebro/`: cuatro cajones, dos hooks (arranque y guardado), un buscador, y la red de notas vista en Obsidian | ⬅️ sigue |
 
 ## Cómo se usa
 
 1. Clona o descarga este repo en tu computadora.
 2. Abre **Claude Code** parado en esa carpeta.
-3. Escríbele exactamente esto:
+3. Escríbele la línea que toca:
 
 ```
 Lee SETUP.md y ayúdame a dejar mi computadora lista.
 ```
+```
+Lee CEREBRO.md y constrúyeme mi cerebro.
+```
 
 Él se encarga del resto. Tú solo contestas lo que te pregunte.
+
+## Lo que quedó listo en la máquina (2026-09-07)
+
+`git 2.51.0` · `Python 3.14.7` · `Claude Code 2.1.263` — más las cuatro cuentas.
+Con eso, `CEREBRO.md` ya tiene todo lo que necesita para correr.
+
+Dos tropiezos que vale la pena recordar, porque se van a repetir: la Microsoft Store se
+atoró una hora en *"Checking system requirements"* (la solución fue bajar Python de
+python.org), y tanto Python como Claude Code quedaron instalados **sin** estar en el PATH —
+o sea, existían pero Windows no los encontraba. Las dos veces el síntoma fue el mismo
+mensaje: *"is not recognized as the name of a cmdlet"*.
 
 ## ⚠️ Tiene que correr en TU máquina
 
