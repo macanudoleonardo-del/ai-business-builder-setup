@@ -2,10 +2,18 @@
 
 Dos archivos, en orden. Cada uno se le entrega a Claude Code y él ejecuta.
 
+### Día 1
+
 | # | Archivo | Qué hace | Estado |
 |---|---|---|---|
-| 1 | **`SETUP.md`** | Deja tu computadora lista: git · Python 3 · Claude Code · las 4 cuentas (GitHub · Supabase · Vercel · Claude) | ✅ hecho — 2026-09-07 |
-| 2 | **`CEREBRO.md`** | Le construye **memoria permanente** a tu IA en `~/cerebro/`: cuatro cajones, dos hooks (arranque y guardado), un buscador, y la red de notas vista en Obsidian | ⬅️ sigue |
+| 1 | **`SETUP.md`** | Deja tu computadora lista: git · Python 3 · Claude Code · las 4 cuentas (GitHub · Supabase · Vercel · Claude) | ✅ 2026-09-07 |
+| 2 | **`CEREBRO.md`** | Le construye **memoria permanente** a tu IA en `~/cerebro/`: cuatro cajones, dos hooks (arranque y guardado), un buscador, y la red de notas en Obsidian | ✅ 2026-09-08 |
+
+### Día 2
+
+| # | Archivo | Qué hace | Estado |
+|---|---|---|---|
+| 3 | **`1-INVENTARIO.md`** | No construye nada: **cuenta** lo que ya tienes. Tu agenda, tu familia, tu gremio y los negocios donde ya eres cliente. 50 minutos, y sale un número | ⬅️ sigue |
 
 ## Cómo se usa
 
@@ -18,6 +26,9 @@ Lee SETUP.md y ayúdame a dejar mi computadora lista.
 ```
 ```
 Lee CEREBRO.md y constrúyeme mi cerebro.
+```
+```
+Lee 1-INVENTARIO.md y cuéntame lo que ya tengo.
 ```
 
 Él se encarga del resto. Tú solo contestas lo que te pregunte.
@@ -55,3 +66,18 @@ Está escrito en el propio `SETUP.md`, y es la parte que te protege:
 
 No tiene nada que ver con los otros proyectos (Amor Consciente / saludmetabolico.com,
 Glass Experts Atlanta, Emma's Play World). Es material del curso y vive aparte, a propósito.
+
+## Una regla del día 2 que vale la pena leer antes
+
+`1-INVENTARIO.md` toca datos de personas: tu agenda exportada y los negocios de tu banco.
+La guía misma pone los límites, y son buenos:
+
+- **El archivo de contactos nunca sale de tu computadora.** Se lee local, con Python, sin
+  tocar internet ni una vez. Vive en `~/mi-mina/datos/`, detrás de un `.gitignore` que se
+  pone *antes* de que exista el riesgo.
+- **Nada de PDFs ni capturas del banco.** Ni cuentas, ni tarjetas, ni saldos. Abres tu app
+  y dictas **nombres de negocios**. Nada más.
+- **Personas y negocios no se mezclan:** `~/mi-mina/` (gente, nunca sale) es una carpeta
+  distinta de `~/mina/` (datos públicos de negocios).
+- Al cerebro suben **los números y el conocimiento** — cuántos son, cómo habla tu gremio —
+  **nunca los nombres y teléfonos**.
