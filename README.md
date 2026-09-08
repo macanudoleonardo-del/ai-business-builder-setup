@@ -16,6 +16,12 @@ Dos archivos, en orden. Cada uno se le entrega a Claude Code y él ejecuta.
 | 3 | **`1-INVENTARIO.md`** | No construye nada: **cuenta** lo que ya tienes. Tu agenda, tu familia, tu gremio y los negocios donde ya eres cliente. 50 min, y sale un número | ⬅️ sigue |
 | 4 | **`2-MINA.md`** | Saca prospectos de **datos públicos y gratis** — directorio, censo del gobierno, ofertas de empleo — y los carga a una tabla privada en tu Supabase. 70 min | pendiente |
 
+### Extra
+
+| # | Archivo | Qué hace | Estado |
+|---|---|---|---|
+| — | **`CONECTAR.md`** | Clona el cerebro sanitizado de Spencer Hoffmann dentro del tuyo, en `~/cerebro/colectivo/`. Aditivo y de solo lectura. 30 seg | pendiente |
+
 ## Cómo se usa
 
 1. Clona o descarga este repo en tu computadora.
@@ -33,6 +39,9 @@ Lee 1-INVENTARIO.md y cuéntame lo que ya tengo.
 ```
 ```
 Lee 2-MINA.md y sácame mi primera lista de prospectos.
+```
+```
+Lee CONECTAR.md y conecta mi cerebro al de Spencer.
 ```
 
 Él se encarga del resto. Tú solo contestas lo que te pregunte.
@@ -101,3 +110,22 @@ Dos de sus fases usan fuentes **mexicanas** que no existen en Estados Unidos:
 Así que al arrancar, **dile tu país en la Fase 2** y que se vaya por la Fase 7. Si no, se van 27 minutos en dos fases que no pueden funcionar.
 
 Lo demás del programa —la tabla privada en Supabase, la regla de *negocios, no personas*, el guardrail de *"antes de contratar, mira esto"* en vez de *"despide a tu gente"*, y el filtro joya de **con teléfono y sin página web**— funciona igual en cualquier país.
+
+## Notas sobre `CONECTAR.md`
+
+**Falta el paso de Windows.** El archivo explica cómo instalar la herramienta `gh` (GitHub
+CLI) en Mac, pero no en Windows. Aquí es:
+
+```powershell
+winget install GitHub.cli
+```
+
+Después hay que **cerrar y volver a abrir PowerShell** para que aparezca el comando.
+
+**La cuenta de GitHub tiene que ser la misma con la que se compró** — la invitación al repo
+privado `2clicks-com/cerebro-colectivo` llegó a ese correo. Con otra cuenta sale
+`Repository not found`, que en realidad quiere decir *"no tienes acceso"*, no *"no existe"*.
+
+**Su Fase 7 final manda telemetría** a `spencerhoffmann.com` con el usuario y el número de
+notas. El propio archivo dice que **se pregunta antes, no se hace solo**, y que si dices
+que no, no cambia nada de lo que ya quedó instalado. Es tu decisión.
