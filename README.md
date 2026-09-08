@@ -13,7 +13,8 @@ Dos archivos, en orden. Cada uno se le entrega a Claude Code y él ejecuta.
 
 | # | Archivo | Qué hace | Estado |
 |---|---|---|---|
-| 3 | **`1-INVENTARIO.md`** | No construye nada: **cuenta** lo que ya tienes. Tu agenda, tu familia, tu gremio y los negocios donde ya eres cliente. 50 minutos, y sale un número | ⬅️ sigue |
+| 3 | **`1-INVENTARIO.md`** | No construye nada: **cuenta** lo que ya tienes. Tu agenda, tu familia, tu gremio y los negocios donde ya eres cliente. 50 min, y sale un número | ⬅️ sigue |
+| 4 | **`2-MINA.md`** | Saca prospectos de **datos públicos y gratis** — directorio, censo del gobierno, ofertas de empleo — y los carga a una tabla privada en tu Supabase. 70 min | pendiente |
 
 ## Cómo se usa
 
@@ -29,6 +30,9 @@ Lee CEREBRO.md y constrúyeme mi cerebro.
 ```
 ```
 Lee 1-INVENTARIO.md y cuéntame lo que ya tengo.
+```
+```
+Lee 2-MINA.md y sácame mi primera lista de prospectos.
 ```
 
 Él se encarga del resto. Tú solo contestas lo que te pregunte.
@@ -81,3 +85,19 @@ La guía misma pone los límites, y son buenos:
   distinta de `~/mina/` (datos públicos de negocios).
 - Al cerebro suben **los números y el conocimiento** — cuántos son, cómo habla tu gremio —
   **nunca los nombres y teléfonos**.
+
+## ⚠️ `2-MINA.md` está calibrado para México — y aquí no estamos en México
+
+Dos de sus fases usan fuentes **mexicanas** que no existen en Estados Unidos:
+
+| Fase | Fuente | Sirve en EE. UU. |
+|---|---|---|
+| 4 | Sección Amarilla (`seccionamarilla.com.mx`) | ❌ no |
+| 5 | DENUE del INEGI (censo económico mexicano) | ❌ no |
+| 6 | Vacantes, por búsqueda web | ✅ **sí, en cualquier país** |
+
+**La guía ya lo previó:** su **Fase 7** dice textualmente *"si no está en México, brinca las fases 4 y 5 y haz esto en su lugar"*. Ahí se buscan los equivalentes locales.
+
+Así que al arrancar, **dile tu país en la Fase 2** y que se vaya por la Fase 7. Si no, se van 27 minutos en dos fases que no pueden funcionar.
+
+Lo demás del programa —la tabla privada en Supabase, la regla de *negocios, no personas*, el guardrail de *"antes de contratar, mira esto"* en vez de *"despide a tu gente"*, y el filtro joya de **con teléfono y sin página web**— funciona igual en cualquier país.
